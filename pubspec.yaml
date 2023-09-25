@@ -1,0 +1,41 @@
+name: androidapp
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  cached_network_image: ^3.2.3
+  carousel_slider: ^4.2.1
+  dio: ^4.0.4
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^5.1.0
+  flutter_launcher_icons: ^0.11.0
+  geolocator: ^10.0.0
+  location: ^5.0.3
+  mapbox_gl: ^0.16.0
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/logo1.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+      - assets/icon/
+      - assets/image/
+      - assets/config/
+
+mapbox_gl:
+    git:
+      url: https://github.com/tobrun/flutter-mapbox-gl.git
